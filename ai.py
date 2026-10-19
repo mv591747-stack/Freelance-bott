@@ -21,7 +21,7 @@ async def generate_draft(obj: str, tone: str, facts: str) -> str:
     )
     
     payload = {
-        "model": "mistral-small-latest",
+        "model": "open-mistral-7b",
         "messages": [{"role": "user", "content": prompt}],
         "temperature": 0.7
     }
